@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7626EFFD2225366D0060407E /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7626EFFC2225366C0060407E /* background.jpg */; };
 		76DAE48622242A77004FDFF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DAE48522242A77004FDFF0 /* AppDelegate.swift */; };
 		76DAE48822242A77004FDFF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DAE48722242A77004FDFF0 /* ViewController.swift */; };
 		76DAE48B22242A77004FDFF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76DAE48922242A77004FDFF0 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7626EFFC2225366C0060407E /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 		76DAE48222242A77004FDFF0 /* APIdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APIdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76DAE48522242A77004FDFF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76DAE48722242A77004FDFF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				76DAE48422242A77004FDFF0 /* APIdemo */,
+				7626EFFC2225366C0060407E /* background.jpg */,
 				76DAE49C22242A79004FDFF0 /* APIdemoTests */,
 				76DAE4A722242A79004FDFF0 /* APIdemoUITests */,
 				76DAE48322242A77004FDFF0 /* Products */,
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76DAE49322242A79004FDFF0 /* LaunchScreen.storyboard in Resources */,
+				7626EFFD2225366D0060407E /* background.jpg in Resources */,
 				76DAE49022242A79004FDFF0 /* Assets.xcassets in Resources */,
 				76DAE48B22242A77004FDFF0 /* Main.storyboard in Resources */,
 			);
@@ -437,7 +441,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 55UNRMT6U5;
+				DEVELOPMENT_TEAM = 5CYJ5GBG2Y;
 				INFOPLIST_FILE = APIdemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,7 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 55UNRMT6U5;
+				DEVELOPMENT_TEAM = 5CYJ5GBG2Y;
 				INFOPLIST_FILE = APIdemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

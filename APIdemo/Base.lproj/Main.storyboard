@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,70 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="APIdemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Mcc-rS-PVO">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your City ... London, New York" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T7n-aE-EJX">
+                                <rect key="frame" x="16" y="99" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="address-level2"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tQ-jS-tGT">
+                                <rect key="frame" x="92" y="50" width="136" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currently, this App only works for Capital Cities" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRS-C8-FAF">
+                                <rect key="frame" x="16" y="219" width="288" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="5Ij-zx-o4m"/>
+                                    <constraint firstAttribute="width" constant="288" id="64E-3s-oin"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWT-aA-okU">
+                                <rect key="frame" x="116.5" y="137" width="87" height="30"/>
+                                <state key="normal" title="Get Weather"/>
+                                <connections>
+                                    <action selector="getWeatherButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SNG-cR-esu"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jRS-C8-FAF" firstAttribute="centerX" secondItem="Mcc-rS-PVO" secondAttribute="centerX" id="0fQ-ge-Dgf"/>
+                            <constraint firstItem="eWT-aA-okU" firstAttribute="top" secondItem="T7n-aE-EJX" secondAttribute="bottom" constant="8" id="Hd9-VD-cn7"/>
+                            <constraint firstItem="jRS-C8-FAF" firstAttribute="centerX" secondItem="9tQ-jS-tGT" secondAttribute="centerX" id="J0p-0d-xI4"/>
+                            <constraint firstItem="jRS-C8-FAF" firstAttribute="centerX" secondItem="eWT-aA-okU" secondAttribute="centerX" id="bf0-EI-wy9"/>
+                            <constraint firstItem="T7n-aE-EJX" firstAttribute="top" secondItem="9tQ-jS-tGT" secondAttribute="bottom" constant="20" id="cyE-2u-a4t"/>
+                            <constraint firstItem="jRS-C8-FAF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gfE-Ec-aSW"/>
+                            <constraint firstItem="jRS-C8-FAF" firstAttribute="centerY" secondItem="Mcc-rS-PVO" secondAttribute="centerY" id="hgM-SG-tg1"/>
+                            <constraint firstItem="jRS-C8-FAF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="j6n-Bv-pIS"/>
+                            <constraint firstItem="jRS-C8-FAF" firstAttribute="top" secondItem="eWT-aA-okU" secondAttribute="bottom" constant="52" id="m1r-Eb-5ZP"/>
+                            <constraint firstItem="jRS-C8-FAF" firstAttribute="leading" secondItem="T7n-aE-EJX" secondAttribute="leading" id="tfh-cH-KF0"/>
+                            <constraint firstItem="jRS-C8-FAF" firstAttribute="trailing" secondItem="T7n-aE-EJX" secondAttribute="trailing" id="vca-UW-q18"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="cityTextField" destination="T7n-aE-EJX" id="tIs-Kf-6P8"/>
+                        <outlet property="resultLabel" destination="jRS-C8-FAF" id="iB6-Zc-ZeD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="background.jpg" width="1500" height="1875"/>
+    </resources>
 </document>
